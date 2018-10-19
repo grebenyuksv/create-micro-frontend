@@ -3,16 +3,19 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
-				use: "babel-loader",
-				exclude: /node_modules/
+				use: 'babel-loader',
+				exclude: /node_modules/,
 			},
 			{
 				test: /\.css$/,
-				use: ["style-loader", "css-loader"]
-			}
-		]
+				use: ['style-loader', 'css-loader'],
+			},
+		],
 	},
 	resolve: {
-		extensions: [".js", ".jsx"]
-	}
+		extensions: ['.js', '.jsx'],
+		alias: {
+			'react-native$': 'react-native-web',
+		},
+	},
 };
