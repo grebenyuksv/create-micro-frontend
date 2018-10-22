@@ -1,4 +1,5 @@
 const path = require('path');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 const baseConfig = require('./webpack.config.base');
 
 module.exports = {

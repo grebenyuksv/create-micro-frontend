@@ -13,5 +13,8 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
 	box: { padding: 10 },
-	text: { fontWeight: 'bold' },
+	text: { 
+		color: 'green',
+		fontWeight: 'bold' 
+	},
 });
