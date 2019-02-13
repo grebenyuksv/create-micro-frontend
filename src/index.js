@@ -5,7 +5,14 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<View style={styles.box}>
-				<Text style={styles.text}>Hello, world!</Text>
+				<Text
+					onClick={() => {
+						throw 1;
+					}}
+					style={styles.text}
+				>
+					Hello, world!
+				</Text>
 			</View>
 		);
 	}
@@ -13,8 +20,8 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
 	box: { padding: 10 },
-	text: { 
+	text: {
 		color: 'green',
-		fontWeight: 'bold' 
+		fontWeight: 'bold',
 	},
 });
