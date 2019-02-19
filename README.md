@@ -1,13 +1,18 @@
 # create-micro-frontend
 
-Dev env in the browser:
+Lib:
 ```
 npm i
+npm start
+```
+Dev env in the browser:
+```
+cd examples/web
 npm start
 open http://localhost:3001/
 ```
 
-Dev env on mobile emulatorgi:
+Dev env on mobile emulator:
 ```
 cd examples/mobile
 npm i

@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from '../../src';
+import App from '../dist';
+import { Text } from '@preply/ui';
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -31,6 +32,7 @@ class ErrorBoundary extends React.Component {
 render(
     <ErrorBoundary>
         <App />
+        <Text>Use this chat to communicate during and between lessons</Text>
     </ErrorBoundary>,
     document.getElementById('root'),
 );
