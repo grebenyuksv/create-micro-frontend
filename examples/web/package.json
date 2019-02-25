@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@preply/ui": "^4.1.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -19,12 +20,11 @@
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.5.2",
+    "react": "15.3.0",
     "react-art": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-native": "^0.57.3",
-    "react-native-web": "^0.9.3",
+    "react-dom": "15.3.0",
     "style-loader": "^0.23.1",
+    "styled-components": "3.3.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
@@ -40,8 +40,12 @@
     "react-native": "^0.57.3",
     "react-native-web": "^0.9.3"
   },
+  "resolutions": {
+    "@preply/ui/react": "^16.5.2",
+    "@preply/ui/react-dom": "^16.5.2",
+    "@preply/ui/styled-components": "^4.1.3"
+  },
   "dependencies": {
-    "@preply/ui": "^4.1.1",
-    "styled-components": "^4.1.3"
+    "@preply/ui-old": "npm:@preply/ui@4.1.0"
   }
 }
